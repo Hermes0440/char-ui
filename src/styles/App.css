@@ -1,0 +1,83 @@
+body {
+  background-image: url('../assets/ui-bg.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding-bottom: 85px;
+}
+
+.blur-overlay {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.fixed-pagination {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.character-row {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 4px 4px 8px black;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.character-description {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.character-description.horizontal-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.character-description img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.character-description .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.character-description .details p {
+  margin-bottom: 0.5rem;
+}
+
+.character-description .details p:last-child {
+  margin-bottom: 0;
+}
+
+.character-description img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
